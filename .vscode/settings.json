@@ -1,5 +1,5 @@
 {
-  /**  **/
+  /** Prettier and eslint can each play their respective roles in VScode and support tailwindcss, which basically meets the needs of front-end development. **/
   "workbench.iconTheme": "material-icon-theme",
   "prisma.showPrismaDataPlatformNotification": false,
   "eslint.experimental.useFlatConfig": true,
@@ -31,6 +31,24 @@
     "editor.formatOnSave": false
   },
   "[typescriptreact]": {
+    "editor.formatOnSave": false
+  },
+  "[vue]": {
+    "editor.formatOnSave": false
+  },
+  "[html]": {
+    "editor.formatOnSave": false
+  },
+  "[markdown]": {
+    "editor.formatOnSave": false
+  },
+  "[json]": {
+    "editor.formatOnSave": false
+  },
+  "[jsonc]": {
+    "editor.formatOnSave": false
+  },
+  "[yaml]": {
     "editor.formatOnSave": false
   },
   "files.associations": {

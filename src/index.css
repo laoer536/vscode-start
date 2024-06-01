@@ -3,8 +3,9 @@
 @tailwind utilities;
 
 body {
-       @apply tw-m-0;
+  @apply tw-m-0;
 }
+
 html,
 body,
 #root {

@@ -51,10 +51,51 @@
   "[yaml]": {
     "editor.formatOnSave": false
   },
-  "files.associations": {
-    "*.css": "tailwindcss"
-  },
   "editor.quickSuggestions": {
     "strings": "on"
+  },
+  "cSpell.userWords": ["antd"],
+  "editor.stickyScroll.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.smoothScrolling": true,
+  "workbench.list.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "workbench.colorTheme": "Aura Soft Dark",
+  "editor.cursorBlinking": "expand",
+  "editor.suggest.insertMode": "replace",
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "editor.acceptSuggestionOnEnter": "smart",
+  "editor.suggestSelection": "recentlyUsedByPrefix",
+  // JS TS setting
+  "typescript.inlayHints.enumMemberValues.enabled": true,
+  "editor.minimap.enabled": false,
+  "editor.foldingStrategy": "indentation",
+  "update.mode": "manual",
+  "search.followSymlinks": false,
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/pnpm-lock.yaml": true,
+    "**/package-lock.json": true,
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.gitignore": true,
+    "**/.idea": true,
+    "**/.svn": true,
+    "**/.vscode": true,
+    "**/build": true,
+    "**/dist": true,
+    "**/tmp": true,
+    "**/yarn.lock": true
+  },
+  "files.associations": {
+    "*.css": "tailwindcss",
+    "*.wxss": "css",
+    "*.wxml": "html",
+    "*.svg": "html",
+    "*.xml": "html",
+    "*.wxs": "javascript",
+    // json注释
+    "*.cjson": "jsonc",
+    "*.json": "jsonc"
   }
 }

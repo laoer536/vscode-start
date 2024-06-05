@@ -1,7 +1,12 @@
-# vscode-start
+# Vsc0od start
+
 Vscode repo setting.
 
-## Eextensions
+## Font for Vscode
+
+[JetBrainsMono](https://www.jetbrains.com/lp/mono/)
+
+## Extensions
 ```
 aaron-bond.better-comments@3.0.2
 adam-bender.commit-message-editor@0.25.0

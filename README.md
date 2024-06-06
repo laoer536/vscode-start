@@ -1,4 +1,4 @@
-# Vsc0od start
+# Vscode start
 
 Vscode repo setting.
 

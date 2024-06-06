@@ -1,8 +1,9 @@
 {
   /** Prettier and eslint can each play their respective roles in VScode and support tailwindcss, which basically meets the needs of front-end development. **/
   "workbench.iconTheme": "material-icon-theme",
-  "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
-  "prisma.showPrismaDataPlatformNotification": false,
+  "editor.fontFamily": "'JetBrains Mono','Helvetica',Consolas, 'Courier New', monospace",
+  "editor.fontWeight": 400,
+  "editor.lineHeight": 1.7,
   "eslint.experimental.useFlatConfig": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "prettier.enable": true,
@@ -61,7 +62,6 @@
   "editor.smoothScrolling": true,
   "workbench.list.smoothScrolling": true,
   "editor.cursorSmoothCaretAnimation": "on",
-  "workbench.colorTheme": "Aura Soft Dark",
   "editor.cursorBlinking": "expand",
   "editor.suggest.insertMode": "replace",
   "editor.suggest.snippetsPreventQuickSuggestions": false,
@@ -98,5 +98,6 @@
     // json注释
     "*.cjson": "jsonc",
     "*.json": "jsonc"
-  }
+  },
+  "workbench.colorTheme": "Aura Soft Dark"
 }

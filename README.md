@@ -8,7 +8,7 @@ Vscode repo setting.
 
 ## Settings
 
-```
+```json
 {
   /** Editor appearance **/
   "workbench.iconTheme": "material-icon-theme",

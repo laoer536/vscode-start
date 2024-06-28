@@ -1,15 +1,21 @@
 {
-  /** Prettier and eslint can each play their respective roles in VScode and support tailwindcss, which basically meets the needs of front-end development. **/
+  /** Editor appearance **/
   "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Aura Soft Dark",
   "editor.fontFamily": "'JetBrains Mono','Helvetica',Consolas, 'Courier New', monospace",
   "editor.fontWeight": 300,
   "editor.lineHeight": 1.7,
-  "eslint.experimental.useFlatConfig": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  /** Prettier **/
   "prettier.enable": true,
-  "editor.formatOnSave": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  /** Eslint **/
+  "eslint.enable": true,
+  "eslint.useFlatConfig": true,
+  "eslint.format.enable": false,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
   },
   "eslint.validate": [
     "javascript",
@@ -23,36 +29,7 @@
     "jsonc",
     "yaml"
   ],
-  "[javascript]": {
-    "editor.formatOnSave": false
-  },
-  "[javascriptreact]": {
-    "editor.formatOnSave": false
-  },
-  "[typescript]": {
-    "editor.formatOnSave": false
-  },
-  "[typescriptreact]": {
-    "editor.formatOnSave": false
-  },
-  "[vue]": {
-    "editor.formatOnSave": false
-  },
-  "[html]": {
-    "editor.formatOnSave": false
-  },
-  "[markdown]": {
-    "editor.formatOnSave": false
-  },
-  "[json]": {
-    "editor.formatOnSave": false
-  },
-  "[jsonc]": {
-    "editor.formatOnSave": false
-  },
-  "[yaml]": {
-    "editor.formatOnSave": false
-  },
+  /** For a better coding experience **/
   "editor.quickSuggestions": {
     "strings": "on"
   },
@@ -67,7 +44,6 @@
   "editor.suggest.snippetsPreventQuickSuggestions": false,
   "editor.acceptSuggestionOnEnter": "smart",
   "editor.suggestSelection": "recentlyUsedByPrefix",
-  // JS TS setting
   "typescript.inlayHints.enumMemberValues.enabled": true,
   "editor.minimap.enabled": false,
   "editor.foldingStrategy": "indentation",
@@ -88,6 +64,8 @@
     "**/tmp": true,
     "**/yarn.lock": true
   },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  /** Personal personalized configuration **/
   "files.associations": {
     "*.css": "tailwindcss",
     "*.wxss": "css",
@@ -95,9 +73,11 @@
     "*.svg": "html",
     "*.xml": "html",
     "*.wxs": "javascript",
-    // json注释
     "*.cjson": "jsonc",
     "*.json": "jsonc"
   },
-  "workbench.colorTheme": "Aura Soft Dark"
+  "tailwindCSS.experimental.classRegex": [
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ]
 }
